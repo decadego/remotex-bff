@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Hacker News</title>
+    {{ helper.Loader("/public/dist/index.css")
+    .css("/public/index.css")
+    .css("/public/index2.css")
+    .done(ctx.app.config.loader.assetsMap, ctx.app.config.loader.cdnHost) | safe
+    }}
+</head>
+<body>
+<h1>hello news!</h1>
+<div class="news-view view">
+    {% for item in list %}
+    <div class="item">
+        {{item.id}}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

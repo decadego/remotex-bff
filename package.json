@@ -1,0 +1,45 @@
+{
+  "name": "remotex-bff",
+  "version": "1.0.0",
+  "description": "remotex bff",
+  "private": true,
+  "dependencies": {
+    "egg": "^1.1.0",
+    "egg-view-nunjucks": "^2.0.0",
+    "loader": "^2.1.1"
+  },
+  "devDependencies": {
+    "autod": "^2.8.0",
+    "egg-bin": "^3.3.0",
+    "egg-ci": "^1.6.0",
+    "egg-mock": "^3.4.0",
+    "eslint": "^3.19.0",
+    "eslint-config-egg": "^3.2.0",
+    "koa-browser-sync": "^1.0.1",
+    "loader-builder-advance": "^1.0.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "build": "loader app/view . --prefix=/app"
+  },
+  "ci": {
+    "version": "6"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Evans",
+  "license": "MIT"
+}
