@@ -11,29 +11,29 @@
 
 
 exports.index = function* (ctx) {
-  ctx.body = "index"
+  ctx.body = 'index';
 };
 
 exports.new = function* (ctx) {
-  ctx.body = "new"
+  ctx.body = 'new';
 };
 
 exports.create = function* (ctx) {
-  ctx.body = "create"
+  ctx.body = 'create';
 };
 
 exports.show = function* (ctx) {
-  ctx.body = "show"
+  ctx.body = 'show';
 };
 
 exports.edit = function* (ctx) {
-  ctx.body = "edit"
+  ctx.body = 'edit';
 };
 
 exports.update = function* (ctx) {
-  ctx.body = "update"
+  ctx.body = 'update';
 };
 
 exports.destroy = function* (ctx) {
-  ctx.body = "destroy"
+  ctx.body = 'destroy';
 };
