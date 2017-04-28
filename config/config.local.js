@@ -1,12 +1,7 @@
 'use strict';
 
-module.exports = appInfo => {
+module.exports = () => {
   const config = {};
-
-  config.middleware = ['liveReload'];
-  config.liveReload = {
-    init: true, files: ["app/**/*"], logConnections: false
-  };
 
   config.nunjucks = {
     autoescape: true,
@@ -16,10 +11,15 @@ module.exports = appInfo => {
     cache: false,
   };
 
-  config.loader ={
+  config.loader = {
     assetsMap: require('../assets.json'),
     cdnHost: '',
+  };
 
+  config.browsersync = {
+    init: true,
+    files: [ 'app/view/**/*' ],
+    logConnections: false,
   };
 
   return config;

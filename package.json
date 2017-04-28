@@ -11,11 +11,11 @@
   "devDependencies": {
     "autod": "^2.8.0",
     "egg-bin": "^3.3.0",
+    "egg-browsersync": "^1.0.0",
     "egg-ci": "^1.6.0",
     "egg-mock": "^3.4.0",
     "eslint": "^3.19.0",
     "eslint-config-egg": "^3.2.0",
-    "koa-browser-sync": "^1.0.1",
     "loader-builder-advance": "^1.0.0",
     "webstorm-disable-index": "^1.1.2"
   },

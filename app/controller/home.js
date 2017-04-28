@@ -5,21 +5,21 @@ module.exports = app => {
     * index() {
       const dataList = {
         list: [
-          { id: 1, title: 'to home', url: '/' },
-          { id: 2, title: 'this news', url: '/news' }
-        ]
+          { id: 1, title: 'to home!!', url: '/' },
+          { id: 2, title: 'this news!!!!', url: '/news' },
+        ],
       };
 
       yield this.ctx.render('index.html', dataList);
     }
 
-    *news(){
+    * news() {
 
       const dataList = {
         list: [
           { id: 1, title: 'to home', url: '/' },
-          { id: 2, title: 'this news', url: '/news' }
-        ]
+          { id: 2, title: 'this news', url: '/news' },
+        ],
       };
 
       yield this.ctx.render('news.html', dataList);
